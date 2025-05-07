@@ -103,22 +103,25 @@ body {
 /* About section styles */
 .about {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack text and image vertically for better centering */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     background-image: linear-gradient(45deg, #363D73, #2794B3);
-    justify-content: space-between;
     width: 100%;
+    min-height: 100vh; /* Ensure it takes full viewport height for vertical centering */
+    text-align: center; /* Center text within the section */
 }
 
 .about .about-text {
     width: 450px;
     color: #fff;
-    padding: 5rem 1rem 5rem 5rem;
+    padding: 2rem; /* Reduced padding for balanced spacing */
 }
 
 .about .about-image img {
     height: 400px;
     width: 600px;
-    padding: 5rem 5rem 5rem 1rem;
+    padding: 2rem; /* Reduced padding for balanced spacing */
 }
 
 /* Portfolio section styles */
